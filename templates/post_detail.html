@@ -1,6 +1,11 @@
 {% load static %}
 
 <div>
+  <a href="{% url 'update_post' object.id %}">Update</a>
+  <a href="{% url 'delete_post' object.id %}">Delete</a>
+</div>
+
+<div>
   <p> {{ object.title }} </p>
   <image src="/{{ object.image }}">
 </div>
